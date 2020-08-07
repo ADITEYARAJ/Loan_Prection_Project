@@ -1,0 +1,15 @@
+streamlit
+numpy
+pandas
+joblib
+os
+sklearn.neighbors
+sklearn
+sklearn.linear
+sklearn.ensemble
+sklearn.tree
+imblearn
+sklearn.metrics
+collections
+seaborn
+matplotlib
