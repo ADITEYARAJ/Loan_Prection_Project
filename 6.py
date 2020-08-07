@@ -6,8 +6,8 @@ import numpy as np
 
 
 # Utils
-import os
-import joblib
+#import os
+#import joblib
 
 
 feature_names_best =['CCSC', 'Term', 'NoEmp', 'NewExist', 'CreateJob', 'RetainedJob',
@@ -15,9 +15,9 @@ feature_names_best =['CCSC', 'Term', 'NoEmp', 'NewExist', 'CreateJob', 'Retained
        'SBA_Appv']
 
 # Load ML Models
-def load_model(model_file):
-	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
-	return loaded_model
+#def load_model(model_file):
+#	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
+#	return loaded_model
 def get_key(val,my_dict):
 	for key,value in my_dict.items():
 		if val == key:
@@ -131,15 +131,15 @@ def main():
     model_choice = st.selectbox("Select Model",["KNN","DecisionTree","RandomForest"])
     if st.button("Predict"):
         if model_choice == "KNN":
-            loaded_model = load_model("knn_model.pkl")
+            loaded_model = joblib.load("knn_model.pkl")
             prediction = loaded_model.predict(single_sample)
             pred_prob = loaded_model.predict_proba(single_sample)
         elif model_choice == "DecisionTree":
-            loaded_model = load_model("decision_tree_model.pkl")
+            loaded_model = joblib.load("decision_tree_model.pkl")
             prediction = loaded_model.predict(single_sample)
             pred_prob = loaded_model.predict_proba(single_sample)
         else :
-            loaded_model = load_model("rf_model.pkl")
+            loaded_model = joblib.load("rf_model.pkl")
             prediction = loaded_model.predict(single_sample)
             pred_prob = loaded_model.predict_proba(single_sample)
         st.markdown(result_temp,unsafe_allow_html=True)
