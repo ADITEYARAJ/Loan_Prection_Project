@@ -6,8 +6,8 @@ import numpy as np
 
 
 # Utils
-#import os
-#import joblib
+import os
+import joblib
 
 
 feature_names_best =['CCSC', 'Term', 'NoEmp', 'NewExist', 'CreateJob', 'RetainedJob',
@@ -15,9 +15,9 @@ feature_names_best =['CCSC', 'Term', 'NoEmp', 'NewExist', 'CreateJob', 'Retained
        'SBA_Appv']
 
 # Load ML Models
-#def load_model(model_file):
-#	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
-#	return loaded_model
+def load_model(model_file):
+	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
+	return loaded_model
 def get_key(val,my_dict):
 	for key,value in my_dict.items():
 		if val == key:
@@ -74,10 +74,10 @@ prescriptive_message_temp ="""
 def main():
     st.title("Bank Authenticator")
     html_temp = """
-		<div style="background-color:{};padding:10px;border-radius:10px">
-		<h1 style="color:white;text-align:center;">LOAN DEFAULT PREDICTION </h1>
-		<h5 style="color:white;text-align:center;"> </h5>
-		</div>
+		 <div style="background-color:{};padding:10px;border-radius:10px">
+		 <h1 style="color:white;text-align:center;">LOAN DEFAULT PREDICTION </h1>
+		 <h5 style="color:white;text-align:center;"> </h5>
+		 </div>
 		"""
     result_temp ="""
 	<div style="background-color:#464e5f;padding:10px;border-radius:10px;margin:10px;">
@@ -131,15 +131,15 @@ def main():
     model_choice = st.selectbox("Select Model",["KNN","DecisionTree","RandomForest"])
     if st.button("Predict"):
         if model_choice == "KNN":
-            loaded_model = joblib.load("knn_model.pkl")
+            loaded_model = load_model("knn_model.pkl")
             prediction = loaded_model.predict(single_sample)
             pred_prob = loaded_model.predict_proba(single_sample)
         elif model_choice == "DecisionTree":
-            loaded_model = joblib.load("decision_tree_model.pkl")
+            loaded_model = load_model("decision_tree_model.pkl")
             prediction = loaded_model.predict(single_sample)
             pred_prob = loaded_model.predict_proba(single_sample)
         else :
-            loaded_model = joblib.load("rf_model.pkl")
+            loaded_model = load_model("rf_model.pkl")
             prediction = loaded_model.predict(single_sample)
             pred_prob = loaded_model.predict_proba(single_sample)
         st.markdown(result_temp,unsafe_allow_html=True)
