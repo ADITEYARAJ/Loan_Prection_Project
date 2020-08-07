@@ -7,5 +7,4 @@ plotnine
 scipy
 sklearn
 imblearn
-collections
 xgboost
