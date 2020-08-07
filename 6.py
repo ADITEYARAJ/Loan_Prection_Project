@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np 
 
 
-# Utils
-import os
+
+#import os
 import joblib
 
 
@@ -16,7 +16,7 @@ feature_names_best =['CCSC', 'Term', 'NoEmp', 'NewExist', 'CreateJob', 'Retained
 
 # Load ML Models
 def load_model(model_file):
-	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
+	loaded_model = joblib.load(open(model_file),"rb")
 	return loaded_model
 def get_key(val,my_dict):
 	for key,value in my_dict.items():
