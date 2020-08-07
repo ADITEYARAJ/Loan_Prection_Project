@@ -4,7 +4,6 @@ pandas
 joblib
 matplotlib
 plotnine
-missingo
 scipy
 sklearn
 imblearn
