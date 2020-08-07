@@ -74,11 +74,10 @@ prescriptive_message_temp ="""
 def main():
     st.title("Bank Authenticator")
     html_temp = """
-		 <div style="background-color:{};padding:10px;border-radius:10px">
-		 <h1 style="color:white;text-align:center;">LOAN DEFAULT PREDICTION </h1>
-		 <h5 style="color:white;text-align:center;"> </h5>
-		 </div>
-		"""
+    <div style="background-color:tomato;padding:10px">
+    <h2 style="color:white;text-align:center;">Loan Prediction App </h2>
+    </div>
+    """
     result_temp ="""
 	<div style="background-color:#464e5f;padding:10px;border-radius:10px;margin:10px;">
 	<h4 style="color:white;text-align:center;">***Algorithm***</h4>
