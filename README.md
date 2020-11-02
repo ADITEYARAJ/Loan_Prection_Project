@@ -12,7 +12,7 @@ Predicting the chance of risk is more relevant before giving the loan. So, it re
 3. When the prediction is showing high risk, the bank have to collect more information about the background of that particular company. Then bank will decide to give the loan or not.
 
 
-# Dataset- 
+## Dataset- 
 The data has 149999 rows and 26 columns.
 
 Dataset Description-
@@ -95,9 +95,37 @@ Number of Emp: As the number of employees in the business increase, chances of d
 
 Created job: Chances of defaulting is least when jobs created is between 10 and 400, highest when greater than 400.
 
+![image](https://user-images.githubusercontent.com/58631474/97908689-0821b680-1d6d-11eb-8e50-819f97b33c7c.png)
 
-        
-       
+Revolving line :For revolving line of credit the chances to default is less than non revolving line
+
+![image](https://user-images.githubusercontent.com/58631474/97908701-0ce66a80-1d6d-11eb-88c0-d838012dc2ee.png)
+
+HEATMAP FOR COORELATION
+Heatmap of correlation matrix after removing the GrAppv and SBA_apprv and chargeoffprin: multi collenearity problem solved
+
+![image](https://user-images.githubusercontent.com/58631474/97908744-1e2f7700-1d6d-11eb-9c8a-6cb3752a5f01.png)
+
+Pairplot : For finding overlapping of dependent variable and relation between variables.
+
+![image](https://user-images.githubusercontent.com/58631474/97908775-28517580-1d6d-11eb-8572-a4ccb5549fe1.png)
+
+CLASS-IMBALANCE
+
+Count Plot of Output Variable: Visualisation of Imbalance of Train Data.
+
+After train-test ,the output data is imbalance in train data.So, before model building we have to treat the imbalance of the train data set. Using over Sampling technique called SMOTE.
+
+
+![image](https://user-images.githubusercontent.com/58631474/97908882-5040d900-1d6d-11eb-9ee2-cb894b70cdb2.png)
+
+  ## Models Created after SMOTE and Standard Scalar(with standardization)
+   
+The distance measuring machine learning algorithms need standardization because these independent variables are in different scale. So, we are fixing the scaling issue with standardization technique.
+
+ 
+The below models have been completed after standardization :
+      
 
 Model-:
 
