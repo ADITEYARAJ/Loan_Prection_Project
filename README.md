@@ -11,21 +11,13 @@ Understanding the problem statement is the first and foremost step. This would h
 Predicting the chance of risk is more relevant before giving the loan. So, it reduces the risk of profit & loss of the bank. 
 3. When the prediction is showing high risk, the bank have to collect more information about the background of that particular company. Then bank will decide to give the loan or not.
 
-#Project Architecture
 
-
-
-
-
-
-
-
-
-
-Dataset- The data has 149999 rows and 26 columns.
+#Dataset- 
+The data has 149999 rows and 26 columns.
 
 Dataset Description-
 
+Column names-:
 City                      
 State                     
 Zip                       
@@ -51,6 +43,13 @@ MIS_Status
 ChgOffPrinGr              
 GrAppv                    
 SBA_Appv                  
+
+
+
+#Project Architecture
+
+
+![image](https://user-images.githubusercontent.com/58631474/97906721-23d78d80-1d6a-11eb-96d4-274d61cdbfcd.png)
 
 
 Model-:
