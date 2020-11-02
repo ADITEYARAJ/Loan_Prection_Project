@@ -56,11 +56,13 @@ SBA_Appv
 NULL VALUES
 
 ![image](https://user-images.githubusercontent.com/58631474/97907120-c98afc80-1d6a-11eb-8a11-9ac1074e4e03.png)
+![image](https://user-images.githubusercontent.com/58631474/97907455-546bf700-1d6b-11eb-83f0-62f53aa55c6b.png)
 
 ## EDA
 
 Disbursement Gross : As per the below graph, more cases have less amount.
         As the disbursement gross amount increases, chances of defaulting decreases.
+        ![image](https://user-images.githubusercontent.com/58631474/97907483-5d5cc880-1d6b-11eb-8a2b-d8ee68a53330.png)
         
         
        
