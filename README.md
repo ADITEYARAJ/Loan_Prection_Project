@@ -1,16 +1,26 @@
 # Loan_Prection_Project
-Check for Defaulter or NotDefaulter
+
+##Check for Defaulter or NotDefaulter
+
 Web app- : https://loan-prediction-123.herokuapp.com/
 
 Understanding the problem statement is the first and foremost step. This would help you give an intuition of what you will face ahead of time. Let us see the problem statement -
 
-A Finance company deals in all home loans. They have presence across all urban, semi urban and rural areas. Customer first apply for home loan after that company validates the customer eligibility for loan. Company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To automate this process, they have given a problem to identify the customers segments, those are eligible for loan amount so that they can specifically target these customers.
+1. A Bank accepts deposits from customers and from the corpus thus available, it lends to Borrowers who want to carry out certain Business activities for Growth and Profit. It is often seen that due to some reasons like failure of Business, the company making losses or the company becoming delinquent/bankrupt the loans are either not Paid in full or are Charged-off or are written off. The Bank is thus faced with the problem of identifying those Borrowers who can pay up in full and not lending to borrowers who are likely to default.
+2. At the time of giving loan to a new customer or a company, the bank needs to know the chance of getting risk on loan repayment, based on some relevant information.
+Predicting the chance of risk is more relevant before giving the loan. So, it reduces the risk of profit & loss of the bank. 
+3. When the prediction is showing high risk, the bank have to collect more information about the background of that particular company. Then bank will decide to give the loan or not.
 
-It is a classification problem where we have to predict whether a loan would be approved or not. In a classification problem, we have to predict discrete values based on a given set of independent variable(s). Classification can be of two types:
+#Project Architecture
 
-Binary Classification : In this classification we have to predict either of the two given classes. For example: classifying the gender as male or female, predicting the result as win or loss, etc. Multiclass Classification : Here we have to classify the data into three or more classes. For example: classifying a movie's genre as comedy, action or romantic, classify fruits as oranges, apples, or pears, etc.
 
-Loan prediction is a very common real-life problem that each retail bank faces atleast once in its lifetime. If done correctly, it can save a lot of man hours at the end of a retail bank.
+
+
+
+
+
+
+
 
 Dataset- The data has 149999 rows and 26 columns.
 
