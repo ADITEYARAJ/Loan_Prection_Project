@@ -46,10 +46,14 @@ SBA_Appv
 
 
 
-#Project Architecture
+##Project Architecture
 
 
 ![image](https://user-images.githubusercontent.com/58631474/97906721-23d78d80-1d6a-11eb-96d4-274d61cdbfcd.png)
+
+##DATA Cleaning                                
+
+
 
 
 Model-:
