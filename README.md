@@ -166,4 +166,6 @@ weighted avg       0.99      0.99      0.99     24053
 weighted avg       0.99      0.99      0.99     24053
 
 
+## Final heroku app page:
+https://loan-prediction-123.herokuapp.com/
 
