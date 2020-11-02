@@ -1,8 +1,8 @@
 # Loan_Prection_Project
 
-##Check for Defaulter or NotDefaulter
+## Check for Defaulter or NotDefaulter
 
-Web app- : https://loan-prediction-123.herokuapp.com/
+### Web app- : https://loan-prediction-123.herokuapp.com/
 
 Understanding the problem statement is the first and foremost step. This would help you give an intuition of what you will face ahead of time. Let us see the problem statement -
 
@@ -12,7 +12,7 @@ Predicting the chance of risk is more relevant before giving the loan. So, it re
 3. When the prediction is showing high risk, the bank have to collect more information about the background of that particular company. Then bank will decide to give the loan or not.
 
 
-#Dataset- 
+# Dataset- 
 The data has 149999 rows and 26 columns.
 
 Dataset Description-
@@ -46,15 +46,24 @@ SBA_Appv
 
 
 
-##Project Architecture
+## Project Architecture
 
 
 ![image](https://user-images.githubusercontent.com/58631474/97906721-23d78d80-1d6a-11eb-96d4-274d61cdbfcd.png)
 
-##DATA Cleaning                                
+## DATA Cleaning                                
 
+NULL VALUES
 
+![image](https://user-images.githubusercontent.com/58631474/97907120-c98afc80-1d6a-11eb-8a11-9ac1074e4e03.png)
 
+## EDA
+
+Disbursement Gross : As per the below graph, more cases have less amount.
+        As the disbursement gross amount increases, chances of defaulting decreases.
+        
+        
+       
 
 Model-:
 
