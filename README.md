@@ -12,7 +12,7 @@ Predicting the chance of risk is more relevant before giving the loan. So, it re
 3. When the prediction is showing high risk, the bank have to collect more information about the background of that particular company. Then bank will decide to give the loan or not.
 
 
-## Dataset- 
+## Dataset-: 
 The data has 149999 rows and 26 columns.
 
 Dataset Description-
